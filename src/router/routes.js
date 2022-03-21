@@ -4,7 +4,7 @@ import {CharacterEpisodeList} from '../characterEpisodesList/characterEpisodeLis
 
 const routes = [
     {
-        path: '/',
+        path: '/Rick-and-Morty-episodes',
         component: CharactersList,
         key: '/CharactersList',
     },

@@ -1,7 +1,7 @@
 import React from "react";
 import {Row, Col,Card,Spin} from 'antd';
 import '../charactersList.scss';
-import  {CardMedia} from "../../components/cardMedia";
+import {CardMedia} from "../../components/cardMedia/cardMedia";
 import {Hooks} from "../utils/hooks";
 
 

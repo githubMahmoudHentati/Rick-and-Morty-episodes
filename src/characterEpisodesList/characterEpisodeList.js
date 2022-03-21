@@ -5,7 +5,7 @@ import {GraphQLFetchData} from "./utils/graphQLFetchData";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import {useDispatch, useSelector} from "react-redux";
-import{CardMedia} from "../components/cardMedia";
+import {CardMedia} from "../components/cardMedia/cardMedia";
 import {setConstraintDataEpisodeList} from "./store/actions";
 import {OwlCarouselComponent} from "./components/owlCarousel";
 import {EpisodeList} from "./components/episodeList";
@@ -37,7 +37,7 @@ export const CharacterEpisodeList =() =>{
                             </Col>
                             {characterEpisodesList.constraintData.episodeCardHeight !== null &&
                                 <Col span={16}>
-                                    <EpisodeList characterEpisodesList={characterEpisodesList}/>
+                                    <EpisodeList episodeCardHeight={characterEpisodesList.constraintData.episodeCardHeight} episodes={characterEpisodesList.CardMediaEpisodeInfoList.episode}/>
                                 </Col>
                             }
                         </Row>

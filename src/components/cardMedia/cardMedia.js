@@ -1,11 +1,8 @@
-import React, {useCallback, useEffect, useRef, useState} from "react";
+import React from "react";
 import {Card, Row, Col} from 'antd';
-import {setConstraintDataEpisodeList} from "../characterEpisodesList/store/actions";
-import {useDispatch, useSelector} from "react-redux";
+
 
 export const CardMedia = ({name,description,image,textNameStyle,textDescriptionStyle}) => {
-    const {Meta} = Card;
-
     return (
             <Card
                 className={'Card-Media'}

@@ -4,12 +4,12 @@ import '../characterEpisodesList.scss';
 import {RightCircleFilled} from "@ant-design/icons";
 
 
-export const EpisodeList = ({characterEpisodesList}) => {
+export const EpisodeList = ({episodeCardHeight,episodes}) => {
 
 
     return (
         <Card
-            style={{height: `${characterEpisodesList.constraintData.episodeCardHeight - 5}px`}}
+            style={{height: `${episodeCardHeight - 5}px`}}
             className={'List-Episodes'}>
             <Row gutter={[0, 10]}>
                 <Col className={'Episodes-title-Header'} span={24}>
@@ -17,9 +17,9 @@ export const EpisodeList = ({characterEpisodesList}) => {
                 </Col>
                 <Col span={24}>
                     <Row>
-                        {characterEpisodesList.CardMediaEpisodeInfoList.episode && characterEpisodesList.CardMediaEpisodeInfoList.episode.map((episode, episodeIndex) => {
+                        {episodes&& episodes.map((episode) => {
                             return (
-                                <Col key={episodeIndex} className={"Episode-Title"}
+                                <Col key={episode.id} className={"Episode-Title"}
                                      span={24}>
                                     <Row justify={"space-between"}>
                                         <Col>

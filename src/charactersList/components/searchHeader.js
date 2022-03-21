@@ -32,6 +32,7 @@ export const SearchHeader =({getEpisodeDataCall,charactersList})=>{
         if(!value){
             dispatch(setConstraintDataCharactersList({constraintDataName:'searchTerm',constraintDataValue:'empty'}))
         }else
+
             dispatch(setConstraintDataCharactersList({constraintDataName:'searchTerm',constraintDataValue:value}))
     }
     const onSelectCharacter=(value)=>{
