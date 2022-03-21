@@ -12,14 +12,14 @@ export const ListCardMedia = ({listCardMediaInfo,listMediaCardLoading}) => {
         <div>
             <Spin size="middle" spinning={listMediaCardLoading}>
                 <Card className={"List-Card-Media"}>
-                    <Row gutter={[0,20]} justify={'space-between'} className={"Card-Media-Container"} >
+                    <Row gutter={[0,20]}  className={"Card-Media-Container"} >
                         {
                             listCardMediaInfo && listCardMediaInfo.map((media, index) => {
                                 return (
                                     <Col onClick={async () => {
                                         await getCharacterEpisodesList(media)
                                     }} key={index}
-                                         lg={5}md={11} xs={20}>
+                                         lg={5}md={11} sm={20} xs={20}>
                                         {!listMediaCardLoading &&
                                             <CardMedia index={index} name={media.name} description={media.species}
                                                        image={media.image} textNameStyle={'Text-Card-media'}

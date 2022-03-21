@@ -28,7 +28,7 @@ export const CharacterEpisodeList =() =>{
                 <Row className={"Character-Episodes-List-Container"} gutter={[0, 20]}>
                     <Col span={24}>
                         <Row className={'Episodes-List-Container'} gutter={[12, 0]}>
-                            <Col ref={episodesListHeightRef} span={8}>
+                            <Col ref={episodesListHeightRef} md={8} sm={6} xs={6}>
                                 <CardMedia image={characterEpisodesList.CardMediaEpisodeInfoList.image}
                                            name={characterEpisodesList.CardMediaEpisodeInfoList.name}
                                            description={characterEpisodesList.CardMediaEpisodeInfoList.species}
@@ -36,7 +36,7 @@ export const CharacterEpisodeList =() =>{
                                 />
                             </Col>
                             {characterEpisodesList.constraintData.episodeCardHeight !== null &&
-                                <Col span={16}>
+                                <Col md={16} sm={18} xs={18}>
                                     <EpisodeList episodeCardHeight={characterEpisodesList.constraintData.episodeCardHeight} episodes={characterEpisodesList.CardMediaEpisodeInfoList.episode}/>
                                 </Col>
                             }

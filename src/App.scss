@@ -91,16 +91,16 @@
 @media (max-width: 1080px) {
   .Card-Media{
     .Text-Card-media{
-      font-size: 18px;
+      font-size: 18px !important;
     }
     .Description-Card-media{
-      font-size: 15px;
+      font-size: 15px !important;
     }
     .Text-Big-Card-media{
-      font-size: 30px;
+      font-size: 30px !important;
     }
     .Description-Big-Card-media{
-      font-size: 25px;
+      font-size: 25px !important;
     }
   }
 }
@@ -110,19 +110,19 @@
 
   .Card-Media{
     .ant-card-body{
-      padding: 11px;
+      padding: 11px !important;
     }
     .Text-Card-media{
-      font-size: 10px;
+      font-size: 10px !important;
     }
     .Description-Card-media{
-      font-size: 7px;
+      font-size: 7px !important;
     }
     .Text-Big-Card-media{
-      font-size: 11px;
+      font-size: 11px !important;
     }
     .Description-Big-Card-media{
-      font-size: 11px;
+      font-size: 11px !important;
     }
   }
 
