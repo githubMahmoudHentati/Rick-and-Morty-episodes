@@ -1,0 +1,11 @@
+version: "3"
+services:
+  morty:
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src

@@ -1,0 +1,137 @@
+
+:root {
+  --theme-color:#000000;
+  --card-color:#141414;
+  --box-color:#1D1D1D;
+  --item--hover-color:rgb(29, 142, 250);
+  --item--hover-background-color:#111D2C;
+  --item-border-color:grey;
+  --item-border--hover-color:#42A8FB;
+  --text-color:white;
+  --button-border: 3px solid #000000;
+  --button-text-size: 2em;
+  --border-color-focus:blue;
+  --border-color:#d9d9d9
+}
+
+.MainLayout{
+  .Page-Header{
+    width: 100%;
+    height: 64px;
+    background-color: var(--card-color);
+    .Title-Header{
+      display: flex;
+      align-items: center;
+      padding: 0 2%;
+      color:var(--text-color);
+      font-size:30px;
+    }
+  }
+  .Card{
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: var(--theme-color);
+    .Mini-Card{
+      background-color: var(--card-color);
+      padding: 24px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.button-container {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 0px 20px;
+  border: var(--button-border);
+  font-size: var(--button-text-size);
+}
+
+.button-container:hover {
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//************* Media QuerySettings ***************//
+
+@media (max-width: 1080px) {
+  .Card-Media{
+    .Text-Card-media{
+      font-size: 18px;
+    }
+    .Description-Card-media{
+      font-size: 15px;
+    }
+    .Text-Big-Card-media{
+      font-size: 30px;
+    }
+    .Description-Big-Card-media{
+      font-size: 25px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .Card-Media{
+    .ant-card-body{
+      padding: 11px;
+    }
+    .Text-Card-media{
+      font-size: 10px;
+    }
+    .Description-Card-media{
+      font-size: 7px;
+    }
+    .Text-Big-Card-media{
+      font-size: 11px;
+    }
+    .Description-Big-Card-media{
+      font-size: 11px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+@media screen and (max-width: 280px) {
+
+}
